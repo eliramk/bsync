@@ -367,7 +367,7 @@ def make_snapshot(ssh, dirname, newsnapname, unresolved):
 
 
 def make_snapshots(ssh1, dir1name, ssh2, dir2name, oldsnapname, unresolved):
-    newsnapname = ".bsync-snap-" + datetime.datetime.now().strftime("%Y%m%d%H%M%S.%f") + ".txt"
+    newsnapname = ".bsync-snap-" + datetime.datetime.now().strftime("%Y%m%d%H%M%S.%f") + ".snp"
     print("Updating filelists...")
     printv("Updating snap files: " + newsnapname + "...")
     logging.debug(f'dir1name={dir1name} dir2name={dir2name}')
